@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Images</title>
+    <link rel="stylesheet" href="googleimage.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="google__nav--left">
+                <li><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+                <li><a href="https://store.google.com/us/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
+            </ul>
+            <ul class="google__nav--right">
+                <li><a href="https://accounts.google.com/v3/signin/accountchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&dsh=S-637278858%3A1760892229309143&emr=1&ifkv=AfYwgwXF3XBpuVhyR983uMW5-khaBeEF_WQj4KeEit8AQcatwNNupaUUAQn5dQa_41coY867NdQTCw&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin#">Gmail</a></li>
+                <li><a href="index.html">Google Search</a></li>
+                <li class="apps__menu--bg"><img src="application.png" alt="Google apps" class="google__apps--btn"></li>
+                <li><button id="signinbtn" type="button">Sign In</button></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="google__search">
+        <img class="googlelogo" src="googleimg.png" alt="googlelogo">
+        <form action="http://images.google.com/images" method="get">
+            <img class="google__search--icon" src="searchicon.png">
+            <img class="google__vs--icon" src="voicesearch.png" alt="Search by Voice">
+            <input class="google__s-bar" type="text" name="q" id="myInput">
+            <div class="google__search--btn">
+                    <button onclick="showAlert()" class="button-search" type="button">Google Image Search</button>
+                    <button class="button-search" type="button"><a href="https://www.google.com/advanced_search">Advanced Search</a></button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="panel">
+            <ul class="google__footer--left">
+                <li><a href="https://business.google.com/us/google-ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                <li><a href="https://business.google.com/us/business-profile/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
+                <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+            </ul>
+            <div class="panel__center">
+                <img class="leaf" src="leaf.png">
+                <a href="https://ai.google/societal-impact/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer">Applying AI towards science and the enviroment</a>
+            </div>
+            <ul>
+                <li><a href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a></li>
+                <li><a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a></li>
+                <li><a href="https://www.google.com/preferences?hl=en&client=safari&fg=1">Settings</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="googleimage.js"></script>
+</body>
+</html>
